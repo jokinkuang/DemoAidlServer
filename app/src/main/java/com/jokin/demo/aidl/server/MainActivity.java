@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         unbindService(mServiceConnection);
+        unbindService(mLocalServiceConnection);
     }
 
     /////////////// Local Service /////////////////
